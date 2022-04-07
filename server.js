@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 const studentRoutes = require('./routes/studentRoutes');
 const app = express();
+const cors = require('cors');
+const morgan = require('morgan');
 
 
 mongoose.connect(config.database);

@@ -14,7 +14,7 @@ router.post('/student',async (req, res) => {
    
     try {
         const newStudent =  new Student(req.body);
-        console.log(req.body)
+        // console.log(req.body)
         await newStudent.save();
         res.json({message: 'Student registered!', newStudent});
 
